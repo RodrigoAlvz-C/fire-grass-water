@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fire Grass Water</title>
-</head>
-<body>
-  
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fire Grass Water</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="scores">
+        <div id="human-score">Human: 0</div>
+        <div id="computer-score">Computer: 0</div>
+      </div>
+
+      <div id="results">
+        <div id="result-text">
+          <<span class="fire-color">Fire</span> Beats
+          <span class="grass-color">Grass</span>> <<span class="water-color"
+            >Water</span
+          >
+          Beats <span class="fire-color">Fire</span>> <<span class="grass-color"
+            >Grass</span
+          >
+          Beats <span class="water-color">Water</span>>
+        </div>
+        <div id="result-images">
+          <img id="human-choice-img" src="./images/default.png" />
+          <img id="computer-choice-img" src="./images/default.png" />
+        </div>
+      </div>
+
+      <div id="buttoms">
+        <button class="btn" id="grass">
+          <img src="./images/grass.jpg" alt="Grass Icon" />
+        </button>
+
+        <button class="btn" id="fire">
+          <img src="./images/fire.png" alt="Fire Icon" />
+        </button>
+
+        <button class="btn" id="water">
+          <img src="./images/water.jpg" alt="Water Icon" />
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
